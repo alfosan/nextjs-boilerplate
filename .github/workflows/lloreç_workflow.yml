@@ -10,17 +10,6 @@ on:
     branches:
       - main
 
-env:
-  GMAIL_USER: ${{ secrets.GMAIL_USER }}
-  GMAIL_PASS: ${{ secrets.GMAIL_PASS }}
-  METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
-  VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
-  ORG_ID: ${{ secrets.ORG_ID }}
-  PROJECT_ID: ${{ secrets.PROJECT_ID }}
-  PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
-  TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
-  TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-
 jobs:
   linter_job:
     runs-on: ubuntu-latest
@@ -30,6 +19,11 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+
+      - name: Load .env variables
+        run: |
+          echo "Loading .env file..."
+          export $(cat .env | grep -v '^#' | xargs)
 
       - name: Run linter
         run: npm run lint
@@ -44,8 +38,13 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Load .env variables
+        run: |
+          echo "Loading .env file..."
+          export $(cat .env | grep -v '^#' | xargs)
+
       - name: Start Next.js server
-        run: npm run dev &
+        run: npm run dev & 
         env:
           PORT: 3000
 
@@ -77,6 +76,11 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Load .env variables
+        run: |
+          echo "Loading .env file..."
+          export $(cat .env | grep -v '^#' | xargs)
 
       - name: Generate GitHub metrics
         uses: lowlighter/metrics@latest
