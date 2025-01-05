@@ -12,7 +12,7 @@ export default function Home() {
             <h3 className="text-xl font-bold mb-4">Información Personal</h3>
             <ul className="space-y-2">
               <li>📧 lloalfsan@gmail.com</li>
-              <li>📱 +34 610 72 75 93</li>
+              <li>📱 +34 610 72 75 95</li>
               <li>📍 Valencia, España</li>
               <li>🌐 github.com/alfosan</li>
             </ul>
