@@ -21,7 +21,7 @@ export default function Home() {
           </section>
 
           <section className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-bold mb-4">Habilidades</h3>
+            <h3 className="text-xl font-bold mb-4">Habilitats</h3>
             <div className="flex flex-wrap gap-2">
               <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 rounded-full text-sm">React</span>
               <span className="px-3 py-1 bg-green-100 dark:bg-green-900 rounded-full text-sm">Java</span>
