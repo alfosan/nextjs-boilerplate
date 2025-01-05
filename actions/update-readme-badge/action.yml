@@ -1,0 +1,9 @@
+name: "Update README Badge"
+description: "Updates the README.md with the test result badge."
+inputs:
+  cypress_outcome:
+    description: "The outcome of Cypress tests (success or failure)."
+    required: true
+runs:
+  using: "node16"
+  main: "index.js"

@@ -1,0 +1,28 @@
+const nodemailer = require("nodemailer");
+
+const to = process.env.INPUT_TO;
+const subject = process.env.INPUT_SUBJECT;
+const body = process.env.INPUT_BODY;
+
+const transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    user: process.env.GMAIL_USER,
+    pass: process.env.GMAIL_PASS,
+  },
+});
+
+const mailOptions = {
+  from: process.env.GMAIL_USER,
+  to,
+  subject,
+  text: body,
+};
+
+transporter.sendMail(mailOptions, (error, info) => {
+  if (error) {
+    console.error(`Error: ${error}`);
+  } else {
+    console.log(`Email sent: ${info.response}`);
+  }
+});
