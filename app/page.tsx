@@ -56,7 +56,7 @@ export default function Home() {
         <div className="flex gap-4 items-center">
           <a
             className="rounded-full bg-blue-600 text-white px-6 py-3 hover:bg-blue-700 transition-colors"
-            href="mailto:lorensanchis@gmail.com"
+            href="mailto:lloalfsan@gmail.com"
           >
             Contactar
           </a>
