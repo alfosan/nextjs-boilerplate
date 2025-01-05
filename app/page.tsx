@@ -29,7 +29,7 @@ export default function Home() {
               <span className="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 rounded-full text-sm">JavaScript</span>
               <span className="px-3 py-1 bg-red-100 dark:bg-red-900 rounded-full text-sm">HTML/CSS</span>
               <span className="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 rounded-full text-sm">SQL</span>
-              <span className="px-3 py-1 bg-pink-100 dark:bg-pink-900 rounded-full text-sm">Git</span>
+              <span className="px-3 py-1 bg-pink-100 dark:bg-pink-900 rounded-full text-sm">Git & Github</span>
             </div>
           </section>
         </div>
