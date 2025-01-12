@@ -35,7 +35,7 @@ export default function Home() {
             <div id="info" className="bg-white dark:bg-slate-800 p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
               <h3 className="text-2xl font-bold mb-6 border-b border-slate-200 dark:border-slate-700 pb-2 text-slate-800 dark:text-slate-200">Información Personal</h3>
               <ul className="space-y-4">
-                <li className="flex items-center space-x-3"><span className="text-xl">📧</span><a href="mailto:lloalfsan@gmail.com" className="text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400">lloalfsan@gmail.com</a></li>
+                <li className="flex items-center space-x-3"><span className="text-xl">📧</span><a href="mailto:lloalfsan&#64;gmail.com" className="text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400">lloalfsan&#64;gmail.com</a></li>
                 <li className="flex items-center space-x-3"><span className="text-xl">📱</span><span className="text-slate-700 dark:text-slate-300">+34 610 72 75 95</span></li>
                 <li className="flex items-center space-x-3"><span className="text-xl">📍</span><span className="text-slate-700 dark:text-slate-300">Valencia, España</span></li>
                 <li className="flex items-center space-x-3"><span className="text-xl">🌐</span><a href="https://github.com/alfosan" className="text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400">GITHUB</a></li>
@@ -117,7 +117,7 @@ export default function Home() {
           <div className="flex gap-6 justify-center">
             <a
               className="rounded-full bg-indigo-600 text-white px-8 py-4 hover:bg-indigo-700 transition-colors font-semibold shadow-sm hover:shadow-md"
-              href="mailto:lloalfsan@gmail.com"
+              href="mailto:lloalfsan&#64;gmail.com"
             >
               Contactar
             </a>
