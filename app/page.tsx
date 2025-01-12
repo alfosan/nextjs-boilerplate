@@ -89,12 +89,12 @@ export default function Home() {
               <div className="relative pl-8 border-l-2 border-indigo-500">
                 <h4 className="font-bold text-lg text-slate-800 dark:text-slate-200">CFGS Desarrollo Aplicaciones Web</h4>
                 <p className="text-slate-600 dark:text-slate-400">Sept 2023 - Actualmente</p>
-                <p className="text-slate-600 dark:text-slate-400">IES L'ESTACIÓ | Ontinyent</p>
+                <p className="text-slate-600 dark:text-slate-400">IES ESTACIÓ | Ontinyent</p>
               </div>
               <div className="relative pl-8 border-l-2 border-indigo-500">
                 <h4 className="font-bold text-lg text-slate-800 dark:text-slate-200">CFGM Sistemas Microinformáticos y Redes</h4>
                 <p className="text-slate-600 dark:text-slate-400">Sept 2021 - Jun 2023</p>
-                <p className="text-slate-600 dark:text-slate-400">IES L'ESTACIÓ | Ontinyent</p>
+                <p className="text-slate-600 dark:text-slate-400">IES ESTACIÓ | Ontinyent</p>
               </div>
               <div className="relative pl-8 border-l-2 border-indigo-500">
                 <h4 className="font-bold text-lg text-slate-800 dark:text-slate-200">Curso de Python y IA - 258h</h4>
