@@ -98,13 +98,11 @@ jobs:
         run: |
           echo "Updating README.md with metrics..."
           awk '/## Resultados de Métricas/ {print; print "![Metrics](github-metrics.svg)"; next} 1' README.md > temp.md && mv temp.md README.md
-          git config --global user.email "your-email@gmail.com"
-          git config --global user.name "your-github-username"
+          git config --global user.email "lloalfsan@gmail.com"
+          git config --global user.name "alfosan"
           git add README.md
           git commit -m "Update README.md with static GitHub metrics" || echo "No changes to commit"
-          git fetch origin main
-          git rebase origin/main || (git rebase --abort && echo "Rebase failed; skipping pull step")
-          git push origin main || echo "Push failed; skipping push"
+          git push origin main || echo "Push failed"
 
   add_badge_job:
     needs: metrics_job
@@ -134,13 +132,11 @@ jobs:
         run: |
           echo "Updating README.md with badge..."
           awk '/## Resultados de los Últimos Tests/ {print; print ($CYPRESS_OUTCOME == "failure" ? "![Test Badge](https://img.shields.io/badge/test-failure-red)" : "![Test Badge](https://img.shields.io/badge/tested%20with-Cypress-04C38E.svg)"); next} 1' README.md > temp.md && mv temp.md README.md
-          git config --global user.email "your-email@gmail.com"
-          git config --global user.name "your-github-username"
+          git config --global user.email "lloalfsan@gmail.com"
+          git config --global user.name "alfosan"
           git add README.md
           git commit -m "Update README.md with Cypress test results" || echo "No changes to commit"
-          git fetch origin main
-          git rebase origin/main || (git rebase --abort && echo "Rebase failed; skipping rebase")
-          git push origin main || echo "Push failed; skipping push"
+          git push origin main || echo "Push failed"
 
   deploy_job:
     needs: add_badge_job
