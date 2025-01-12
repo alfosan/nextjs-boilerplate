@@ -121,11 +121,13 @@ export default function Home() {
             >
               Contactar
             </a>
+            {/* Botón para descargar el CV */}
             <a
-              className="rounded-full border border-indigo-600 text-indigo-600 px-8 py-4 hover:bg-indigo-600 hover:text-white transition-colors font-semibold shadow-sm hover:shadow-md"
-              href="https://github.com/alfosan"
+              className="rounded-full bg-indigo-600 text-white px-8 py-4 hover:bg-indigo-700 transition-colors font-semibold shadow-sm hover:shadow-md"
+              href="/CV_Llorenç_Alfonso_Sanchis_CAPGEMINI.pdf"
+              download
             >
-              GitHub
+              Descargar CV
             </a>
           </div>
         </main>
