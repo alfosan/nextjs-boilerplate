@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Home() {
   return (
     <div className="flex min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
@@ -5,7 +7,13 @@ export default function Home() {
       <aside className="w-full sm:w-64 fixed sm:left-0 sm:h-full bg-white dark:bg-slate-800 border-r border-slate-200 dark:border-slate-700 p-6 overflow-y-auto sm:block hidden">
         <nav className="space-y-4">
           <div className="mb-8">
-            <img src="/bart.jpg" alt="Llorenç Alfonso" className="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-slate-200 dark:border-slate-700" />
+            <Image
+              src="/bart.jpg"
+              alt="Llorenç Alfonso"
+              className="w-24 h-24 rounded-full mx-auto mb-4 border-2 border-slate-200 dark:border-slate-700"
+              width={96}
+              height={96}
+            />
             <h2 className="text-lg font-bold text-center text-slate-800 dark:text-slate-200">Llorenç Alfonso</h2>
           </div>
           <a href="#info" className="block text-slate-600 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Información Personal</a>
@@ -114,18 +122,13 @@ export default function Home() {
               Contactar
             </a>
             <a
-              className="rounded-full border-2 border-indigo-600 text-indigo-600 dark:text-indigo-400 px-8 py-4 hover:bg-indigo-50 dark:hover:bg-indigo-900/20 transition-colors font-semibold shadow-sm hover:shadow-md"
-              href="/CV_Llorenç_Alfonso_Sanchis_CAPGEMINI.pdf"
-              download
+              className="rounded-full border border-indigo-600 text-indigo-600 px-8 py-4 hover:bg-indigo-600 hover:text-white transition-colors font-semibold shadow-sm hover:shadow-md"
+              href="https://github.com/alfosan"
             >
-              Descargar CV
+              GitHub
             </a>
           </div>
         </main>
-
-        <footer className="text-center text-slate-600 dark:text-slate-400 mt-12 pb-8">
-          <p>© 2024 Llorenç Alfonso Sanchis. Todos los derechos reservados.</p>
-        </footer>
       </div>
     </div>
   );
